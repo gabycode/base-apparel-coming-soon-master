@@ -6,4 +6,95 @@
 
 body {
     font-family: 'Josefin Sans', sans-serif;
+    background-image: linear-gradient(135deg, hsl(0, 0%, 100%) 0%, hsl(0, 100%, 98%) 100%);
+}
+
+.container {
+    max-width: 730px;
+    margin: 0 auto;
+    display: flex;
+    height: 90vh;
+}
+
+/* Main Content */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.logo {
+    width: 150px;
+}
+
+.title {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 4rem;
+    letter-spacing: 15px;
+    margin-top: 1.5em;
+}
+
+.bold-text {
+    font-weight: 600;
+    color: hsl(0, 6%, 24%);
+}
+
+.main-content p {
+    color: hsl(0, 36%, 70%);
+}
+
+.text {
+    line-height: 1.7;
+    margin: 1em;
+}
+
+.text:hover {
+    color: red;
+}
+
+
+/* Form */
+input {
+    border: 2px solid hsla(0, 36%, 70%, 0.416);
+    border-radius: 20px;
+    padding: .85em;
+    color: hsl(0, 36%, 70%);
+    width: 70%;
+}
+
+input::placeholder {
+    color: hsla(0, 36%, 70%, 0.619);
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.btn {
+    border: none;
+    padding: .6em 1.5em;
+    border-radius: 20px;
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%) 0%, hsl(0, 74%, 74%) 100%);
+    color: #fff;
+    font-size: 1.2rem;
+    font-family: inherit;
+    font-weight: 300;
+    transform: translate(-60px);
+    box-shadow: 0px 5px 12px 1px hsla(0, 36%, 70%, 0.619);
+    cursor: pointer;
+    transition: 1s;
+}
+
+.btn:hover {
+    transform: rotateX(180deg);
+    /* transform: translate(-60px); */
+    /* background-image: linear-gradient(135deg, hsl(0, 79%, 85%) 0%,hsl(0, 100%, 85%) 100%); */
+}
+
+
+/* Side Image */
+.side-img {
+    background-image: url("./images/hero-desktop.jpg");
+    background-size: cover;
+    background-color: #404040;
+    background-position: center;
+    width: 120vw;
 }
